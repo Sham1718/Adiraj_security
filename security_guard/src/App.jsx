@@ -11,7 +11,7 @@ import ContactSection from './components/ContactSection'
 
 function App() {
   return (
-    <main className="site-shell">
+    <main className="site-shell theme-dark">
       <Navbar />
       <HeroSection />
       <ServicesSection />
