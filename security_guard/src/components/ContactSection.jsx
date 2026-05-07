@@ -1,3 +1,5 @@
+import { contactGalleryImages } from '../data/siteImages'
+
 function ContactSection() {
   return (
     <section className="contact-section" id="contact">
@@ -13,6 +15,13 @@ function ContactSection() {
           <a href="tel:+919066941212">9066941212</a>
           <a href="mailto:shreeadhirajenterprises61@gmail.com">shreeadhirajenterprises61@gmail.com</a>
           <a href="https://www.shriadhirajenterprises.in">www.shriadhirajenterprises.in</a>
+        </div>
+        <div className="contact-gallery">
+          {contactGalleryImages.map((image) => (
+            <figure className="contact-gallery-card" key={image.src}>
+              <img src={image.src} alt={image.alt} />
+            </figure>
+          ))}
         </div>
       </div>
 

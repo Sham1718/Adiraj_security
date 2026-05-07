@@ -1,4 +1,5 @@
 import { clients } from '../data/siteContent'
+import { clientGalleryImages } from '../data/siteImages'
 
 function ClientsSection() {
   return (
@@ -10,6 +11,13 @@ function ClientsSection() {
           The proposal includes a larger operating list. This section surfaces the strongest recognizable names so
           visitors immediately see active deployment credibility.
         </p>
+      </div>
+      <div className="site-gallery reveal">
+        {clientGalleryImages.map((image, index) => (
+          <figure className={`gallery-card gallery-card-${index + 1}`} key={image.src}>
+            <img src={image.src} alt={image.alt} />
+          </figure>
+        ))}
       </div>
       <div className="clients-grid">
         {clients.map((client, index) => (

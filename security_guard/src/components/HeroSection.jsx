@@ -1,4 +1,4 @@
-import heroImg from '../assets/hero.png'
+import { heroSectionImage } from '../data/siteImages'
 
 function HeroSection() {
   return (
@@ -22,7 +22,7 @@ function HeroSection() {
       </div>
 
       <div className="hero-card reveal delay-1">
-        <img src={heroImg} alt="Security personnel standing on duty" />
+        <img className="hero-image" src={heroSectionImage} alt="Security personnel standing on duty" />
         <div className="status-panel">
           <span className="pulse" aria-hidden="true"></span>
           Always alert, always ready for security, bouncer, labour, and housekeeping deployment

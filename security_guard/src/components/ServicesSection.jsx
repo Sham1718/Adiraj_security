@@ -1,4 +1,5 @@
 import { services } from '../data/siteContent'
+import { serviceSectionImages } from '../data/siteImages'
 
 function ServicesSection() {
   return (
@@ -11,12 +12,17 @@ function ServicesSection() {
           guard-only agency, so the site now reflects that broader offering.
         </p>
       </div>
-      <div className="service-grid">
-        {services.map((service, index) => (
-          <article className="service-card reveal" style={{ '--delay': `${index * 90}ms` }} key={service.title}>
-            <span className="card-number">0{index + 1}</span>
-            <h3>{service.title}</h3>
-            <p>{service.text}</p>
+        <div className="service-grid">
+          {services.map((service, index) => (
+            <article className="service-card reveal" style={{ '--delay': `${index * 90}ms` }} key={service.title}>
+              <img
+                className="service-photo"
+                src={serviceSectionImages[index].src}
+                alt={serviceSectionImages[index].alt}
+              />
+              <span className="card-number">0{index + 1}</span>
+              <h3>{service.title}</h3>
+              <p>{service.text}</p>
           </article>
         ))}
       </div>
