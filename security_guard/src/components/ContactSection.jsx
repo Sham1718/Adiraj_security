@@ -25,18 +25,22 @@ function ContactSection() {
         </div>
       </div>
 
-      <form className="quote-form reveal delay-1">
+      <form
+        className="quote-form reveal delay-1"
+        action="https://formspree.io/f/xaqvdval"
+        method="POST"
+      >
         <label>
           Full name
-          <input type="text" name="name" placeholder="Your name" />
+          <input type="text" name="name" placeholder="Your name" required />
         </label>
         <label>
           Phone number
-          <input type="tel" name="phone" placeholder="Mobile number" />
+          <input type="tel" name="phone" placeholder="Mobile number" required />
         </label>
         <label>
           Service required
-          <select name="service" defaultValue="">
+          <select name="service" defaultValue="" required>
             <option value="" disabled>Select service</option>
             <option>Security Guard Services</option>
             <option>Bouncer Services</option>
@@ -47,9 +51,15 @@ function ContactSection() {
         </label>
         <label>
           Requirement details
-          <textarea name="message" rows="4" placeholder="Example: 4 guards for a residential project in Kharadi, 12-hour shifts" />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Example: 4 guards for a residential project in Kharadi, 12-hour shifts"
+            required
+          />
         </label>
-        <button type="button">Submit Enquiry</button>
+        <input type="hidden" name="_subject" value="New Shri Adhiraj Enterprises enquiry" />
+        <button type="submit">Submit Enquiry</button>
       </form>
     </section>
   )
