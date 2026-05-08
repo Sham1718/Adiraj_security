@@ -17,6 +17,20 @@ export const services = [
   },
 ]
 
+export const serviceCategories = [
+  'Residential Security',
+  'Commercial Security',
+  'Bouncer Security',
+  'Industrial Security',
+  'Event Security',
+  'Personal Security',
+  'Bank Security',
+  'Hospital Security',
+  'Restaurant Security',
+  'School/College Security',
+  'Housekeeping',
+]
+
 export const credentials = [
   'Founded in 2013 with 13+ years of field experience',
   'Shop & Establishment registered service provider',
@@ -46,6 +60,22 @@ export const clients = [
   'SNBP School',
   'Oasis Wagholi',
   'Dynamic Warehouse, Lonikand',
+]
+
+export const primePartners = [
+  'Mulik',
+  'Majestique Landmarks',
+  'Krish Group',
+  'Mayberry',
+  'Adhar',
+  'Aryan Promoters & Builders',
+  'Magnum Iris',
+  'Wakefit',
+  'Pristine O2 World',
+  'Shree Siddhivinayak Promoters & Builders',
+  'Mulik Luxuria',
+  'Gagan Developers',
+  'Oxy Primo',
 ]
 
 export const coverage = [
@@ -126,4 +156,15 @@ export const proofPoints = [
     title: 'Supervision with discipline',
     text: 'Client safety, transparency, response time, and long-term service relationships are presented as core priorities.',
   },
+]
+
+export const whyChoosePoints = [
+  'Trusted, reliable, and result-oriented services delivered with complete professionalism.',
+  'Skilled, semi-skilled, and unskilled manpower selected carefully and trained for quality performance.',
+  'Strict compliance, transparency, and time-bound service execution across contracts.',
+  'Client safety, satisfaction, and long-term relationships treated as top priorities.',
+  'Quick response team backed by strong supervision and a disciplined workforce.',
+  'Customized solutions for business sites, residential projects, and event requirements.',
+  'Competitive pricing without compromising on service standards.',
+  'One-stop support for manpower, security, bouncers, housekeeping, and maintenance services.',
 ]

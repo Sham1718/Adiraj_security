@@ -7,9 +7,9 @@ function AboutSection() {
         <p className="eyebrow">About the firm</p>
         <h2>Registered manpower and security services built for long-term contracts.</h2>
         <p>
-          The proposal to Lodha Group describes Shri Adhiraj Enterprises as a Pune-based provider for security,
-          bouncer, labour, and housekeeping allied services with registered compliance coverage and multi-site
-          operating experience.
+          Shri Adhiraj Enterprises is a Pune-based service provider offering security, bouncer, labour, housekeeping,
+          and allied support services with registered compliance coverage, disciplined deployment, and experience
+          across multiple active sites.
         </p>
         <a className="text-link" href="#contact">Mail for contract discussion</a>
       </div>

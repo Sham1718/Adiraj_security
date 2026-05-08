@@ -6,10 +6,10 @@ function ClientsSection() {
     <section className="section clients-section" id="clients">
       <div className="section-heading reveal">
         <p className="eyebrow">Current and past sites</p>
-        <h2>Selected names listed in the PDF.</h2>
+        <h2>Selected projects and client locations served by the company.</h2>
         <p>
-          The proposal includes a larger operating list. This section surfaces the strongest recognizable names so
-          visitors immediately see active deployment credibility.
+          Shri Adhiraj Enterprises has supported residential projects, commercial properties, and operating sites
+          across Pune region. These names reflect the company&apos;s active deployment footprint.
         </p>
       </div>
       <div className="site-gallery reveal">

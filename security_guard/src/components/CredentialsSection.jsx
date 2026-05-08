@@ -5,7 +5,7 @@ function CredentialsSection() {
     <section className="section credentials-section">
       <div className="section-heading reveal">
         <p className="eyebrow">Business specifics</p>
-        <h2>Compliance and registration details from the shared quotation.</h2>
+        <h2>Compliance and registration details that support dependable operations.</h2>
       </div>
       <div className="credentials-grid">
         {credentials.map((item, index) => (

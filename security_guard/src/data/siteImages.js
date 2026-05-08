@@ -11,6 +11,7 @@ import contactImage1 from '../assets/IMG_4629.JPG.jpeg'
 import contactImage2 from '../assets/IMG_4630.JPG.jpeg'
 import contactImage3 from '../assets/IMG_4631.JPG.jpeg'
 import contactImage4 from '../assets/IMG_4632.JPG.jpeg'
+import partnersBoardImage from '../assets/partners-board.png'
 
 export const heroSectionImage = heroImage
 
@@ -70,3 +71,8 @@ export const contactGalleryImages = [
     alt: 'Support staff image from a managed client location',
   },
 ]
+
+export const partnersSectionImage = {
+  src: partnersBoardImage,
+  alt: 'Prime partners board showing client and developer brand logos',
+}

@@ -11,10 +11,10 @@ function QuoteSection() {
     <section className="section quote-section" id="quote">
       <div className="section-heading reveal">
         <p className="eyebrow">Quotation structure</p>
-        <h2>Wage rates, commercial offer, and terms from the shared quotation.</h2>
+        <h2>Wage rates, commercial offer, and operating terms for contract staffing.</h2>
         <p>
-          The screenshots you shared include exact wage-rate calculations, the monthly commercial offer, and the
-          working terms. This section now reflects those numbers directly instead of a generic placeholder.
+          This section presents the current wage structure, monthly commercial costing, and standard operating terms
+          used for supervisor and security guard contract planning.
         </p>
       </div>
 
@@ -22,7 +22,7 @@ function QuoteSection() {
         <div className="quote-card reveal">
           <div className="quote-card-header">
             <h3>Wage Rate</h3>
-            <p>12-hour shift reference values for supervisor and security guard staffing.</p>
+            <p>12-hour shift reference values for supervisor and security guard deployment planning.</p>
           </div>
           <div className="rate-table">
             <div className="rate-head">Particulars</div>
@@ -41,7 +41,7 @@ function QuoteSection() {
         <div className="quote-card reveal delay-1">
           <div className="quote-card-header">
             <h3>Commercial Offer</h3>
-            <p>Monthly staffing proposal for one supervisor and one security guard.</p>
+            <p>Indicative monthly staffing structure for one supervisor and one security guard.</p>
           </div>
 
           <div className="offer-table">
@@ -78,7 +78,7 @@ function QuoteSection() {
         <div className="quote-card reveal">
           <div className="quote-card-header">
             <h3>General Terms &amp; Conditions</h3>
-            <p>Commercial and operating conditions captured from the quotation screenshots.</p>
+            <p>Standard commercial and operating conditions for service execution and billing.</p>
           </div>
           <ol className="terms-list">
             {quoteTerms.map((term) => (

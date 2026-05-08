@@ -7,8 +7,8 @@ function ContactSection() {
         <p className="eyebrow">Contact details</p>
         <h2>Connect with Shri Adhiraj Enterprises for security and manpower contracts.</h2>
         <p>
-          Based on the PDF, the company operates from Office No. 6, Natraj Complex, J.J. Nagar, Kesnand Road,
-          Wagholi, Pune, Maharashtra 412207.
+          The company operates from Office No. 6, Natraj Complex, J.J. Nagar, Kesnand Road, Wagholi, Pune,
+          Maharashtra 412207 and supports nearby industrial, commercial, and residential locations.
         </p>
         <div className="contact-details">
           <a href="tel:+919893976161">9893976161</a>

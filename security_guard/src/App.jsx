@@ -5,7 +5,9 @@ import AboutSection from './components/AboutSection'
 import CredentialsSection from './components/CredentialsSection'
 import CoverageSection from './components/CoverageSection'
 import ProofBand from './components/ProofBand'
+import WhyChooseSection from './components/WhyChooseSection'
 import ClientsSection from './components/ClientsSection'
+import PartnersSection from './components/PartnersSection'
 import QuoteSection from './components/QuoteSection'
 import ContactSection from './components/ContactSection'
 
@@ -19,7 +21,9 @@ function App() {
       <CredentialsSection />
       <CoverageSection />
       <ProofBand />
+      <WhyChooseSection />
       <ClientsSection />
+      <PartnersSection />
       <QuoteSection />
       <ContactSection />
     </main>
