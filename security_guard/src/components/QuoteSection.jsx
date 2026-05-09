@@ -1,78 +1,61 @@
 import {
-  commercialOfferNotes,
-  commercialOfferRows,
-  commercialSummaryRows,
+  quoteHighlights,
   quoteTerms,
-  wageRateRows,
 } from '../data/siteContent'
+import { contactGalleryImages } from '../data/siteImages'
 
 function QuoteSection() {
   return (
     <section className="section quote-section" id="quote">
       <div className="section-heading reveal">
         <p className="eyebrow">Quotation structure</p>
-        <h2>Wage rates, commercial offer, and operating terms for contract staffing.</h2>
+        <h2>Simple contract information for security and manpower services.</h2>
         <p>
-          This section presents the current wage structure, monthly commercial costing, and standard operating terms
-          used for supervisor and security guard contract planning.
+          Every quotation is prepared after understanding the site, duty hours, manpower count, supervision needs,
+          and service expectations. Final commercials are shared directly after requirement discussion.
         </p>
       </div>
 
       <div className="quote-stack">
         <div className="quote-card reveal">
           <div className="quote-card-header">
-            <h3>Wage Rate</h3>
-            <p>12-hour shift reference values for supervisor and security guard deployment planning.</p>
+            <h3>Quotation Information</h3>
+            <p>Normal service details considered before preparing a final offer.</p>
           </div>
-          <div className="rate-table">
-            <div className="rate-head">Particulars</div>
-            <div className="rate-head">Supervisor (skilled)</div>
-            <div className="rate-head">Security Guard (skilled)</div>
-            {wageRateRows.map((row) => (
-              <div className={`rate-row${row.highlight ? ' is-highlight' : ''}${row.accent ? ' is-accent' : ''}${row.strong ? ' is-strong' : ''}`} key={row.label}>
-                <span>{row.label}</span>
-                <span>{row.supervisor}</span>
-                <span>{row.guard}</span>
-              </div>
+          <div className="quote-info-grid">
+            {quoteHighlights.map((item) => (
+              <article className="quote-info-item" key={item.title}>
+                <span>{item.kicker}</span>
+                <h4>{item.title}</h4>
+                <p>{item.text}</p>
+              </article>
             ))}
           </div>
         </div>
 
-        <div className="quote-card reveal delay-1">
+        <div className="quote-photo-band reveal delay-1">
+          {contactGalleryImages.map((image) => (
+            <figure className="quote-photo-card" key={image.src}>
+              <img src={image.src} alt={image.alt} />
+            </figure>
+          ))}
+        </div>
+
+        <div className="quote-card reveal">
           <div className="quote-card-header">
-            <h3>Commercial Offer</h3>
-            <p>Indicative monthly staffing structure for one supervisor and one security guard.</p>
+            <h3>Service Approach</h3>
+            <p>Shri Adhiraj Enterprises keeps every deployment practical, supervised, and easy to coordinate.</p>
           </div>
-
-          <div className="offer-table">
-            <div className="offer-head">Particulars</div>
-            <div className="offer-head">Manpower</div>
-            <div className="offer-head">Rate</div>
-            <div className="offer-head">Total</div>
-            {commercialOfferRows.map((row) => (
-              <div className="offer-row" key={row.label}>
-                <span>{row.label}</span>
-                <span>{row.manpower}</span>
-                <span>{row.rate}</span>
-                <span>{row.total}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="summary-table">
-            {commercialSummaryRows.map((row) => (
-              <div className={`summary-row${row.highlight ? ' is-highlight' : ''}${row.strong ? ' is-strong' : ''}`} key={row.label}>
-                <span>{row.label}</span>
-                <span>{row.amount}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="quote-notes">
-            {commercialOfferNotes.map((note) => (
-              <p className="quote-note" key={note}>* {note}</p>
-            ))}
-          </div>
+          <p className="quote-body">
+            The team can support residential societies, commercial properties, warehouses, offices, schools, events,
+            and industrial locations. Services can include security guards, supervisors, bouncers, housekeeping,
+            labour supply, office boys, and garden maintenance as per the client requirement.
+          </p>
+          <p className="quote-body">
+            Deployment planning covers duty timings, post location, reporting structure, replacement support,
+            uniform standards, and day-to-day coordination. Pricing is kept transparent and is finalized only after
+            the exact scope of work is clear.
+          </p>
         </div>
 
         <div className="quote-card reveal">

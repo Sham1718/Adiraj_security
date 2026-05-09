@@ -12,6 +12,8 @@ import contactImage2 from '../assets/IMG_4630.JPG.jpeg'
 import contactImage3 from '../assets/IMG_4631.JPG.jpeg'
 import contactImage4 from '../assets/IMG_4632.JPG.jpeg'
 import partnersBoardImage from '../assets/partners-board.png'
+import house from '../assets/house.jpg'
+import garden from '../assets/garden.jpeg'
 
 export const heroSectionImage = heroImage
 
@@ -21,15 +23,15 @@ export const serviceSectionImages = [
     alt: 'Security personnel deployed at a client site',
   },
   {
-    src: serviceImage2,
+    src: contactImage4,
     alt: 'Guard team positioned for active duty',
   },
   {
-    src: serviceImage3,
+    src: house,
     alt: 'Field staff standing in uniform at a property entrance',
   },
   {
-    src: serviceImage4,
+    src: garden,
     alt: 'On-ground support staff ready for site operations',
   },
 ]

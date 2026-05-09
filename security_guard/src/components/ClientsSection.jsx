@@ -20,12 +20,16 @@ function ClientsSection() {
         ))}
       </div>
       <div className="clients-grid">
-        {clients.map((client, index) => (
-          <div className="client-tile reveal" style={{ '--delay': `${index * 50}ms` }} key={client}>
-            {client}
-          </div>
-        ))}
-      </div>
+  {clients.map((client, index) => (
+    <div
+      className="client-tile reveal"
+      style={{ '--delay': `${index * 50}ms` }}
+      key={index}
+    >
+      {client}
+    </div>
+  ))}
+</div>
     </section>
   )
 }
