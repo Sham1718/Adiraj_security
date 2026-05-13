@@ -1,9 +1,14 @@
 import { serviceCategories, services } from '../data/siteContent'
 import { serviceSectionImages } from '../data/siteImages'
+import { motion } from 'framer-motion'
 
 function ServicesSection() {
   return (
-    <section className="section services" id="services">
+    <motion.section className="section services" id="services" 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}>
       <div className="section-heading reveal">
         <p className="eyebrow">Service portfolio</p>
         <h2>One vendor for security, support staff, and site operations.</h2>
@@ -40,7 +45,7 @@ function ServicesSection() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 
