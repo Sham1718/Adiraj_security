@@ -760,11 +760,7 @@ h3 {
   gap: 16px;
   align-items: stretch;
 }
-@media (max-width: 680px) {
-  .quote-photo-band {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .quote-photo-card {
   height: 180px;
