@@ -37,29 +37,6 @@ A modern and responsive business website developed for **Adhiraj Security Servic
 
 ---
 
-## 📂 Project Structure
-
-```bash
-src/
-│
-├── components/
-│   ├── HeroSection.jsx
-│   ├── ServicesSection.jsx
-│   ├── CredentialsSection.jsx
-│   ├── ClientsSection.jsx
-│   ├── QuoteSection.jsx
-│   └── ContactSection.jsx
-│
-├── data/
-│   ├── siteContent.js
-│   └── siteImages.js
-│
-├── assets/
-├── App.jsx
-└── main.jsx
-```
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -145,7 +122,7 @@ Special focus was given to:
 
 ## 👨‍💻 Developer
 
-Developed by Shyam Bharambe
+Developed by Shyam Bharaskar
 
 GitHub:
 https://github.com/Sham1718
