@@ -1,6 +1,6 @@
 # Adhiraj Security Services Website
 
-## Brief One-Line Summary
+## Summary
 A modern responsive business website developed for Adhiraj Security Services to showcase security solutions, company credibility, and premium service presentation.
 
 ---
